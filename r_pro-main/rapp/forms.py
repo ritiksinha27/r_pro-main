@@ -14,5 +14,5 @@ class DynamicQuestionForm(forms.Form):
             required=True
         )
         self.fields['current_question'] = forms.CharField(widget=forms.HiddenInput(), initial=question.id)
-        print(self.fields['current_question'],'ritik')
+        print(self.fields)
         
